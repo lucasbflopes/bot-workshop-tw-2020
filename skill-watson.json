@@ -1,0 +1,1394 @@
+{
+  "intents": [
+    {
+      "intent": "duvida",
+      "examples": [
+        {
+          "text": "to em duvida"
+        },
+        {
+          "text": "deixa eu pensar"
+        },
+        {
+          "text": "não sei"
+        },
+        {
+          "text": "não faço ideia"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "conhecer_tipos_cervejas",
+      "examples": [
+        {
+          "text": "quais tipos existestem"
+        },
+        {
+          "text": "me mostre todos os tipos"
+        },
+        {
+          "text": "quais que tem?"
+        },
+        {
+          "text": "Quais tipos que existem?"
+        },
+        {
+          "text": "Quais são os tipos de cervejas"
+        },
+        {
+          "text": "que tipos de cervejas existem"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "negativo",
+      "examples": [
+        {
+          "text": "de jeito nenhum"
+        },
+        {
+          "text": "n"
+        },
+        {
+          "text": "não gostei"
+        },
+        {
+          "text": "nenhum"
+        },
+        {
+          "text": "não"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "positivo",
+      "examples": [
+        {
+          "text": "sim"
+        },
+        {
+          "text": "isso ai"
+        },
+        {
+          "text": "uhum"
+        },
+        {
+          "text": "curti"
+        },
+        {
+          "text": "gostei"
+        },
+        {
+          "text": "s"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "agradecimento",
+      "examples": [
+        {
+          "text": "Muito obrigado pela ajuda"
+        },
+        {
+          "text": "Vlw mesmo"
+        },
+        {
+          "text": "agradeço a ajuda"
+        },
+        {
+          "text": "obrigado por me ajudar"
+        },
+        {
+          "text": "agradeço sua ajuda"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Preco",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "caro",
+          "synonyms": [
+            "cara"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "barato",
+          "synonyms": [
+            "barato",
+            "barata",
+            "em conta",
+            "baratim"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Evento",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "casal",
+          "synonyms": [
+            "namorada",
+            "namorado",
+            "marido",
+            "esposa",
+            "affair",
+            "rolo",
+            "gata",
+            "gato",
+            "lindo",
+            "linda",
+            "bebe",
+            "baby"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "íntimo",
+          "synonyms": [
+            "só eu",
+            "sozinho",
+            "sozinha",
+            "só",
+            "mais íntimo",
+            "intimista"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "galera",
+          "synonyms": [
+            "turma",
+            "mais gente",
+            "com várias pessoas",
+            "festa",
+            "muita gente",
+            "meus amigos",
+            "amigos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Tipos_de_Cervejas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Belgian Dark Strong Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gose",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Belgian Pale Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "American Pale Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Irish Red Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "American Wild Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sour",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cream Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Weiss",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Weiss Cristal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Weizen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dunkelweizen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Weissbier",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "German Weizen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Imperial IPA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "American IPA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ipa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "India Pale Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "English India Pale Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Amber Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Foreing Extra Stout",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sweet Stout",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Oatmeal Stout",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Imperial Stout",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Stout",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Strong Wood Dark Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Belgian Strong Golden Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Belgian Strong Pale Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Strong Golden Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Belgian Strong Dark Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Belgian Dubbel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dubbel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Belorizontina",
+          "synonyms": [
+            "Backer",
+            "cerveja backer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pilsen",
+          "synonyms": [
+            "Pilsner"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Coffee Beer",
+          "synonyms": [
+            "coffee"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pale Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lager",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Scotch Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Session Pale Ale",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Brown Ale",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "Intensidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "1",
+          "synonyms": [
+            "fraco",
+            "baixa",
+            "fraca",
+            "baixo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3",
+          "synonyms": [
+            "forte",
+            "alta",
+            "alto"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2",
+          "synonyms": [
+            "moderado",
+            "moderada"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Pratos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Carnes de Caça",
+          "synonyms": [
+            "Caça"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Carnes Grelhadas",
+          "synonyms": [
+            "Grelhados"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chocolate",
+          "synonyms": [
+            "Choco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chocolate com Bacon",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coelho",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Comida Mexicana",
+          "synonyms": [
+            "Mexicana"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Comida Tailandesa",
+          "synonyms": [
+            "Tailandesa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Massas",
+          "synonyms": [
+            "arroz",
+            "Miojo",
+            "macarrão",
+            "Risoto"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nozes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Panna Cota",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pastel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Peixes com batata",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Petit Gateau",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Queijo Brie",
+          "synonyms": [
+            "Brie"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bobo de Camarão",
+          "synonyms": [
+            "Camarão",
+            "Frutos do mar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Queijo Emmental",
+          "synonyms": [
+            "Emmental"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Queijo Gorgonzola",
+          "synonyms": [
+            "Gorgonzola"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Queijo Gouda",
+          "synonyms": [
+            "Gouda"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Queijo Parmesão",
+          "synonyms": [
+            "Parmesão"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Queijos",
+          "synonyms": [
+            "Queijos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rocambole de carne",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Saladas",
+          "synonyms": [
+            "Vegano",
+            "Vegan",
+            "Folhas",
+            "Salad",
+            "Salada"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sobremesas",
+          "synonyms": [
+            "Doces"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sorvete de Creme",
+          "synonyms": [
+            "Sorvete"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tiramissu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Churrasco",
+          "synonyms": [
+            "Churrasquinho",
+            "Churras",
+            "carnes",
+            "carne"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ensopado de Frango",
+          "synonyms": [
+            "frango"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Azeitona",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Queijo Camembert",
+          "synonyms": [
+            "Camembert"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Brownie",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Carne de Porco",
+          "synonyms": [
+            "Porco",
+            "torresmo",
+            "torresmim",
+            "torresminho"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://bot-workshop-tw-2020.herokuapp.com/api/webhook",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Hummm, nada melhor que curti a dois!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1579374597438",
+      "conditions": "@Evento:casal",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1579374838426",
+      "previous_sibling": "handler_2_1579374825274"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Viva la vida!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1579374597438",
+      "conditions": "@Evento:galera",
+      "event_name": "filled",
+      "dialog_node": "handler_6_1579374849384",
+      "previous_sibling": "handler_2_1579374838426"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Você pretende tomar com a galera 🍻ou vai querer apreciar sua breja sozinha(o) 🍺?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1579374597438",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1579374597443",
+      "previous_sibling": "handler_10_1579374597442"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "É sempre bom tirar um tempo para si!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1579374597438",
+      "conditions": "@Evento:íntimo",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1579374825274",
+      "previous_sibling": "handler_8_1579374597443"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1579374597438",
+      "context": {
+        "evento": "@Evento"
+      },
+      "conditions": "@Evento",
+      "event_name": "input",
+      "dialog_node": "handler_10_1579374597442"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Na dúvida, acho melhor escolhermos uma mais fraca."
+          ],
+          "selection_policy": "sequential"
+        },
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Na dúvida, acho melhor escolhermos uma mais fraca."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_9_1579438020557",
+      "context": {
+        "teor_alcolico": 1
+      },
+      "conditions": "#duvida",
+      "event_name": "nomatch",
+      "dialog_node": "handler_4_1579470229174",
+      "previous_sibling": "handler_7_1579438020562"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Você prefere uma cerva mais forte ou mais fraca?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1579438020557",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1579438020562",
+      "previous_sibling": "handler_2_1579438020562"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Anotei aqui."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1579438020557",
+      "conditions": "true",
+      "event_name": "filled",
+      "dialog_node": "handler_9_1579604368040",
+      "previous_sibling": "handler_4_1579470229174"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1579438020557",
+      "context": {
+        "teor_alcolico": "@Intensidade"
+      },
+      "conditions": "@Intensidade",
+      "event_name": "input",
+      "dialog_node": "handler_2_1579438020562"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Quem sabe faz ao vivo... ou não. A chamada no webhook falhou ><"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1579374960412",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1579374979741",
+      "previous_sibling": "response_9_1579374978277"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Acho que você vai curtir essa cerveja aqui. O preço médio dela é de R$ $recomendacao.price e costuma cair bem com $recomendacao.harmonization ."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "$recomendacao.name ($recomendacao.kind)",
+            "source": "$recomendacao.image",
+            "description": "$recomendacao.description",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_9_1579374960412",
+      "conditions": "$recomendacao",
+      "dialog_node": "response_9_1579374978277"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Nossa, são mais de 1500 tipos de cervejas em todos mundo 😱! Por aqui consigo lhe apresentar os principais 36 tipos, como: Dubbel, Strong Golden Ale, Pale Ale, Stout, Amber Ale, India Pale Ale ou IPA, Weissbier, Dunkelweizen, Sour, Gose, Coffee Beer entre outras. Qual que você gostaria de conhecer mais?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1579373912506",
+      "conditions": "#conhecer_tipos_cervejas",
+      "event_name": "nomatch",
+      "dialog_node": "handler_1_1579374377137",
+      "previous_sibling": "handler_7_1579376387327"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Não reconheci nenhum tipo com esse nome :/"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1579373912506",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1579437070713",
+      "previous_sibling": "handler_1_1579374377137"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Você têm preferência por qual tipo de cerveja?",
+            "Qual tipo de cerveja você mais curte?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_10_1579373912506",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1579373912520",
+      "previous_sibling": "handler_6_1579373912520"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Tudo bem, vou tentar te surpreender então ;)"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1579373912506",
+      "context": {
+        "tipo_cerveja": "Stout"
+      },
+      "conditions": "#negativo || #duvida",
+      "event_name": "nomatch",
+      "dialog_node": "handler_5_1579376301518",
+      "previous_sibling": "handler_10_1579373912520"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Minhas criptomoedas estão zeradas tbm. Vou selecionar um tipo bem em conta pra ti então!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1579373912506",
+      "context": {
+        "tipo_cerveja": "Sweet Stout"
+      },
+      "conditions": "@Preco:barato",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1579376387327",
+      "previous_sibling": "handler_2_1579376199434"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Vish, se eu fosse você escolheria outra ein!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1579373912506",
+      "context": {
+        "tipo_cerveja": null
+      },
+      "conditions": "@Tipos_de_Cervejas:Belorizontina",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1579376079700",
+      "previous_sibling": "handler_1_1579376058439"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Excelente escolha!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_10_1579373912506",
+      "conditions": "true",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1579376199434",
+      "previous_sibling": "handler_3_1579376079700"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Adoro esse tipo tbm, refrescantes, com alta carbonatação e um sabor amargo suave, com aromas que podem variar desde especiarias como noz moscada e cravo até chocolate. Essa é a cerveja de trigo, uma bebida versátil e saborosa."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1579373912506",
+      "conditions": "@Tipos_de_Cervejas:Weiss",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1579376058439",
+      "previous_sibling": "handler_5_1579376301518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1579373912506",
+      "context": {
+        "tipo_cerveja": "@Tipos_de_Cervejas"
+      },
+      "conditions": "@Tipos_de_Cervejas",
+      "event_name": "input",
+      "dialog_node": "handler_6_1579373912520"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1579373838661",
+      "variable": "$prato",
+      "dialog_node": "slot_6_1579375015109",
+      "previous_sibling": "slot_8_1579374597438"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1579373838661",
+      "variable": "$amargor",
+      "dialog_node": "slot_5_1579469382193",
+      "previous_sibling": "slot_9_1579438020557"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1579373838661",
+      "variable": "$tipo_cerveja",
+      "dialog_node": "slot_10_1579373912506",
+      "previous_sibling": "node_9_1579374960412"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1579373838661",
+      "variable": "$evento",
+      "dialog_node": "slot_8_1579374597438",
+      "previous_sibling": "slot_10_1579373912506"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1579373838661",
+      "variable": "$teor_alcolico",
+      "dialog_node": "slot_9_1579438020557",
+      "previous_sibling": "slot_6_1579375015109"
+    },
+    {
+      "type": "standard",
+      "title": "Obter recomendação",
+      "parent": "node_4_1579373838661",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "dish": "$prato",
+            "kind": "$tipo_cerveja",
+            "event": "$evento",
+            "action": "getBeerRecomendation",
+            "alcohol": "$teor_alcolico",
+            "bitterness": "$amargor"
+          },
+          "result_variable": "recomendacao"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_9_1579374960412"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "E qual seria?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1579375015109",
+      "conditions": "#positivo",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1579471778408",
+      "previous_sibling": "handler_2_1579469644024"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Tudo bem, vamos só beber então!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1579375015109",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "conditions": "#negativo",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1579469644024",
+      "previous_sibling": "handler_5_1579375015113"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Yummy 😋",
+            "🤤🤤🤤"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_6_1579375015109",
+      "conditions": "true",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1579471861882",
+      "previous_sibling": "handler_2_1579471778408"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vai harmonizar a cervejinha com algum tira gosto?  Qual?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "slot_6_1579375015109",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1579375015113",
+      "previous_sibling": "handler_1_1579375015113"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1579375015109",
+      "context": {
+        "prato": "@Pratos"
+      },
+      "conditions": "@Pratos",
+      "event_name": "input",
+      "dialog_node": "handler_1_1579375015113"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "E aí, blz? \nMeu nome é BOTeco seu Sommalier de cerveja Virtual 🍻. \nEstou aqui para te indicar a cerveja mais adequada para o seu perfil, e harmonização com diversos pratos 😉.\nVamos lá? Você têm preferência por algum tipo de cerveja?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "Bem-vindo",
+      "disabled": true,
+      "dialog_node": "response_10_1579217637220",
+      "previous_sibling": "node_4_1579373838661"
+    },
+    {
+      "type": "frame",
+      "title": "Sugerir Cerveja",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo, obrigado por ter me passado todas informações. Vou dar uma olhada aqui e já te retorno."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2500,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "Bem-vindo",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "true",
+      "dialog_node": "node_4_1579373838661"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "De amargo já basta a vida, né?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1579469382193",
+      "context": {
+        "amargor": 1
+      },
+      "conditions": "#negativo",
+      "event_name": "nomatch",
+      "dialog_node": "handler_10_1579469837802",
+      "previous_sibling": "handler_5_1579469763742"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Não sabe o que escolher? Acho menos arriscado uma menos amarga."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1579469382193",
+      "context": {
+        "amargor": 1
+      },
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "conditions": "#duvida",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1579486806346",
+      "previous_sibling": "handler_5_1579472298566"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Por fim, como você prefere o amargor? Forte?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1579469382193",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1579469382198",
+      "previous_sibling": "handler_9_1579469382198"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Curto um amarguinho tbm!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1579469382193",
+      "context": {
+        "amargor": 3
+      },
+      "conditions": "#positivo",
+      "event_name": "nomatch",
+      "dialog_node": "handler_5_1579469763742",
+      "previous_sibling": "handler_10_1579469382198"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "De amargo já basta a vida, né?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1579469382193",
+      "conditions": "@Intensidade:1",
+      "event_name": "filled",
+      "dialog_node": "handler_5_1579472298566",
+      "previous_sibling": "handler_10_1579469837802"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1579469382193",
+      "context": {
+        "amargor": "@Intensidade"
+      },
+      "conditions": "@Intensidade",
+      "event_name": "input",
+      "dialog_node": "handler_9_1579469382198"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_49_1562981506838"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "De nada ;)"
+              },
+              {
+                "text": "Por nada xD"
+              },
+              {
+                "text": "São seus olhos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#agradecimento",
+      "dialog_node": "node_49_1562981506838",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "E aí, blz? \nMeu nome é BOTeco seu Sommelier de cerveja Virtual 🍻. \nEstou aqui para te indicar a cerveja mais adequada para o seu perfil, e harmonização com diversos pratos 😉. Vamos lá? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Bot Workshop TW 2020",
+  "language": "pt-br",
+  "description": "Bot construído durante workshop realizado na ThoughtWorks em 21/01/2020."
+}
